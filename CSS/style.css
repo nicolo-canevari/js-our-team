@@ -8,15 +8,22 @@
 
 /* REGOLE GENERALI */
 body {
+
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    text-align: center;
+   padding: 20px;
+
 }
 
-#team-container {
+/* contenitore delle card */
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px;
+.team-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px;
+  justify-items: center; 
+  margin-top: 20px;
 
 }

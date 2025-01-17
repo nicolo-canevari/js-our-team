@@ -41,7 +41,7 @@ const teamMembers = [
 console.table(teamMembers);
 
 // Selezioniamo il contenitore principale
-const container = document.getElementById("team-container");
+const container = document.querySelector(".team-container");
 
 let items = "";
 
@@ -55,11 +55,11 @@ for (let i = 0; i < teamMembers.length; i++) {
 
   items += `
 
-    < div class="team-container" >
+    <div class="team-container">
 
         <div class="img-container">
 
-            <img src="img/${image}" alt="${name}" />
+            <img src="./img/${image}" alt="${name}" />
 
         </div>
 
@@ -67,9 +67,9 @@ for (let i = 0; i < teamMembers.length; i++) {
 
             <h3>${name}</h3>
 
-            <span>${role}</span>
+            <span>${role}</span><br>
 
-            <span>${email}</span>
+            <a>${email}</a><br>
 
         </div>
 
