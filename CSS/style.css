@@ -92,4 +92,27 @@ h1 {
     margin-bottom: 20px;
     color: #e53170;
 
-  }
+}
+
+
+/* Layout responsive: quando la larghezza dello schermo è inferiore a 768px */
+@media screen and (max-width: 768px) {
+
+    /* Posiziona il testo sotto l'immagine */
+    .team-container {
+
+        grid-template-columns: repeat(3, 1fr);
+        width: 35vw;
+        padding: 20px;
+
+    }
+
+    /* Posiziona il testo sotto l'immagine per ogni card */
+    .team-container > div {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
