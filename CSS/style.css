@@ -12,17 +12,25 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     text-align: center;
-    padding: 20px;
 
 }
 
-/* contenitore delle card */
+/* contenitore main */
+.main-container {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* contenitore delle card dove andrà a stampare JS*/
 .team-container {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 20px;
-    width: 35vw;
+    width: 100%;
+    max-width: 2500px;
 
 }
 
@@ -51,13 +59,14 @@ body {
     text-align: start;
     padding: 15px;
     background-color: black;
+    overflow: hidden;
 
 }
 
 /* regole titolo */
 .text-container h3 {
 
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
     color: white;
 
@@ -88,7 +97,7 @@ body {
 
 h1 {
 
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: #e53170;
 
@@ -102,16 +111,50 @@ h1 {
     .team-container {
 
         grid-template-columns: repeat(3, 1fr);
-        width: 35vw;
         padding: 20px;
 
     }
 
     /* Posiziona il testo sotto l'immagine per ogni card */
-    .team-container > div {
+    .team-container>div {
 
         display: flex;
         flex-direction: column;
+
+    }
+
+}
+
+/* Quando la larghezza dello schermo è inferiore a 480px (tipico smartphone) */
+@media (max-width: 480px) {
+
+    /* aumenta font h1 */
+    h1 {
+
+        font-size: 3rem;
+        margin-top: 20px;
+
+    }
+
+    /* Elimina p */
+    p {
+
+        display: none;
+
+    }
+
+    .team-container {
+
+        /* Tutto in una colonna */
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin-top: 0;
+
+    }
+
+    .text-container {
+
+        padding-bottom: 20px;
 
     }
 
