@@ -19,11 +19,10 @@ body {
 /* contenitore delle card */
 .team-container {
 
-    display: flex;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
     margin-top: 20px;
+    width: 35vw;
 
 }
 
@@ -33,6 +32,7 @@ body {
     width: 100%;
     height: 200px;
     overflow: hidden;
+    background-color: black;
 
 }
 
@@ -45,11 +45,51 @@ body {
 
 }
 
-/* regole testo */
+/* container testo */
 .text-container {
 
     text-align: start;
     padding: 15px;
-    background-color: #fff;
+    background-color: black;
 
 }
+
+/* regole titolo */
+.text-container h3 {
+
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+/* regole span */
+.text-container span {
+
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+/* regole a (email) */
+.text-container a {
+
+    color: #007bff;
+    text-decoration: none;
+
+}
+
+.text-container a:hover {
+
+    text-decoration: underline;
+
+}
+
+h1 {
+
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #e53170;
+
+  }
