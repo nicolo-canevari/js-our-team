@@ -53,7 +53,7 @@ for (let i = 0; i < teamMembers.length; i++) {
   // console.log(name, role, email, img);
 
 
-  items + - `
+  items += `
 
     < div id = "team-container" >
 
@@ -80,3 +80,7 @@ for (let i = 0; i < teamMembers.length; i++) {
   console.table(items);
 
 }
+
+// output nel DOM
+container.innerHTML = items;
+
