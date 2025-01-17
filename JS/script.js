@@ -4,37 +4,37 @@ const teamMembers = [
     name: "Marco Bianchi",
     role: "Designer",
     email: "marcobianchi@team.com",
-    image: "img/male1.png"
+    image: "male1.png"
   },
   {
     name: "Laura Rossi",
     role: "Front-end Developer",
     email: "laurarossi@team.com",
-    image: "img/female1.png"
+    image: "female1.png"
   },
   {
     name: "Giorgio Verdi",
     role: "Back-end Developer",
     email: "giorgioverdi@team.com",
-    image: "img/male2.png"
+    image: "male2.png"
   },
   {
     name: "Marta Ipsum",
     role: "SEO Specialist",
     email: "martarossi@team.com",
-    image: "img/female2.png"
+    image: "female2.png"
   },
   {
     name: "Roberto Lorem",
     role: "SEO Specialist",
     email: "robertolorem@team.com",
-    image: "img/male3.png"
+    image: "male3.png"
   },
   {
     name: "Daniela Amet",
     role: "Analyst",
     email: "danielaamet@team.com",
-    image: "img/female3.png"
+    image: "female3.png"
   }
 ];
 
@@ -59,7 +59,7 @@ for (let i = 0; i < teamMembers.length; i++) {
 
         <div class="img-container">
 
-            <img src="./img/${image}" alt="${name}" />
+            <img src="img/${image}" alt="${name}" />
 
         </div>
 
