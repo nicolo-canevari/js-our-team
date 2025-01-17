@@ -38,3 +38,18 @@ const teamMembers = [
 ];
 
 console.table(teamMembers);
+
+// Selezioniamo il contenitore principale
+const container = document.getElementById("team-container");
+
+let items = "";
+
+for (let i = 0; i < teamMembers.length; i++) {
+  let teamIesimo = teamMembers[i];
+
+  const { name, role, email, img } = teamIesimo;
+
+  // console.log(name, role, email, img);
+
+
+}
