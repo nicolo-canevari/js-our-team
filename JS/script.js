@@ -55,15 +55,15 @@ for (let i = 0; i < teamMembers.length; i++) {
 
   items += `
 
-    < div id = "team-container" >
+    < div class="team-container" >
 
-        <div id="img-container">
+        <div class="img-container">
 
             <img src="img/${image}" alt="${name}" />
 
         </div>
 
-        <div id="text-container">
+        <div class="text-container">
 
             <h3>${name}</h3>
 
