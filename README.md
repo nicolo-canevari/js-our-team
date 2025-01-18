@@ -7,7 +7,7 @@ Dato un array di oggetti rappresentante un team di un’azienda, creare una pagi
 Bonus
 Rendere l’esercizio responsive, mandando a capo le card
 
-lOGICA:
+LOGICA:
 -Creo un div "team-container" nell'html per far apparire le card
 -Con JS andrò a fare una funzione che genererà dinamicamente le card
 -La funzione andrà a iterare sull'array generando dinamicamente gli elementi al suo interno (nome, role, email, img)

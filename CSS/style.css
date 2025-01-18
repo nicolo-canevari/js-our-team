@@ -20,6 +20,7 @@ body {
 
     display: flex;
     justify-content: center;
+    margin-left: 5vw;
 
 }
 
@@ -28,9 +29,9 @@ body {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
     margin-top: 20px;
     width: 100%;
-    max-width: 2500px;
     height: 250px;
 
 }
@@ -57,7 +58,11 @@ body {
 /* container testo */
 .text-container {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: start;
+    width: 15vw;
     padding: 15px;
     background-color: black;
     overflow: hidden;
@@ -67,7 +72,7 @@ body {
 /* regole titolo */
 .text-container h3 {
 
-    font-size: 1.25rem;
+    font-size: 1.7vw;
     margin-bottom: 10px;
     color: white;
 
@@ -79,6 +84,7 @@ body {
     display: block;
     color: white;
     margin-bottom: 5px;
+    font-size: 1.3rem;
 
 }
 
@@ -87,6 +93,7 @@ body {
 
     color: #007bff;
     text-decoration: none;
+    font-size: 1.4rem;
 
 }
 
@@ -98,7 +105,7 @@ body {
 
 h1 {
 
-    font-size: 2.5rem;
+    font-size: 4vw;
     margin-bottom: 20px;
     color: #e53170;
 
@@ -113,7 +120,7 @@ h1 {
 
         grid-template-columns: repeat(3, 1fr);
         padding: 20px;
-        height: 400px;
+        height: auto;
 
     }
 
@@ -122,12 +129,39 @@ h1 {
 
         display: flex;
         flex-direction: column;
-
+        width: 28vw;
+        height: 40vh;
+        
     }
 
     .text-container {
 
-        height: 200px;
+        height: auto;
+        width: 100%;
+
+    }
+
+    h1 {
+
+        font-size: 5vw; 
+
+    }
+
+    .text-container h3 {
+
+        font-size: 2.5vw; 
+
+    }
+
+    .text-container span {
+
+        font-size: 1em; 
+
+    }
+
+    .text-container a {
+
+        font-size: 1em; 
 
     }
 
@@ -157,8 +191,17 @@ h1 {
         grid-template-columns: 1fr;
         padding: 10px;
         margin-top: 0;
-        height: 550px;
+        height: auto;
 
+    }
+
+    .team-container>div {
+
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 55vh;
+        
     }
 
     .text-container {
@@ -166,5 +209,24 @@ h1 {
         padding-bottom: 20px;
 
     }
+
+    .text-container h3 {
+
+        font-size: 7vw; 
+
+    }
+
+    .text-container span {
+
+        font-size: 1.5em; 
+
+    }
+
+    .text-container a {
+
+        font-size: 1.5em; 
+
+    }
+
 
 }
