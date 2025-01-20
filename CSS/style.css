@@ -103,6 +103,7 @@ body {
 
 }
 
+/* titolo principale */
 h1 {
 
     font-size: 4vw;
@@ -114,6 +115,13 @@ h1 {
 
 /* Layout responsive: quando la larghezza dello schermo è inferiore a 768px */
 @media screen and (max-width: 768px) {
+
+    /* rimozione del margine al container del main */
+    .main-container {
+
+        margin: 0;
+
+    }
 
     /* Posiziona il testo sotto l'immagine */
     .team-container {
@@ -131,9 +139,16 @@ h1 {
         flex-direction: column;
         width: 28vw;
         height: 40vh;
-        
+
     }
 
+    h1 {
+
+        font-size: 5vw;
+
+    }
+
+    /* nuove regole @media container del testo e dei suoi elementi (max-width:768px)*/
     .text-container {
 
         height: auto;
@@ -141,27 +156,21 @@ h1 {
 
     }
 
-    h1 {
-
-        font-size: 5vw; 
-
-    }
-
     .text-container h3 {
 
-        font-size: 2.5vw; 
+        font-size: 2.5vw;
 
     }
 
     .text-container span {
 
-        font-size: 1em; 
+        font-size: 1em;
 
     }
 
     .text-container a {
 
-        font-size: 1em; 
+        font-size: 1em;
 
     }
 
@@ -169,6 +178,13 @@ h1 {
 
 /* Quando la larghezza dello schermo è inferiore a 480px (tipico smartphone) */
 @media screen and (max-width: 480px) {
+
+    /* aggiunta del margine ne container del main */
+    .main-container {
+
+        margin-left: 6vw;
+
+    }
 
     /* aumenta font h1 */
     h1 {
@@ -193,6 +209,7 @@ h1 {
         margin-top: 0;
         height: auto;
 
+
     }
 
     .team-container>div {
@@ -201,9 +218,10 @@ h1 {
         flex-direction: column;
         width: 80vw;
         height: 55vh;
-        
+
     }
 
+    /* nuove regole @media container del testo e dei suoi elementi (max-width: 480px)*/
     .text-container {
 
         padding-bottom: 20px;
@@ -212,21 +230,20 @@ h1 {
 
     .text-container h3 {
 
-        font-size: 7vw; 
+        font-size: 7vw;
 
     }
 
     .text-container span {
 
-        font-size: 1.5em; 
+        font-size: 1.5em;
 
     }
 
     .text-container a {
 
-        font-size: 1.5em; 
+        font-size: 1.5em;
 
     }
-
 
 }

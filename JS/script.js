@@ -38,13 +38,16 @@ const teamMembers = [
   }
 ];
 
+// debugging
 console.table(teamMembers);
 
 // Selezioniamo il contenitore principale
 const container = document.querySelector(".team-container");
 
+// creouna variabile items e la stai inizializzo con una stringa vuota
 let items = "";
 
+// ciclo for che itera sull'array items, con ogni iterazione del ciclo accede a un elemento dell'array e assegna i suoi valori a variabili
 for (let i = 0; i < teamMembers.length; i++) {
   let teamIesimo = teamMembers[i];
 
@@ -53,6 +56,8 @@ for (let i = 0; i < teamMembers.length; i++) {
   // console.log(name, role, email, img);
 
 
+  // "aggiungere" o "concatenare" un valore a una variabile esistente. 
+  // Concatenare stringhe (o altri tipi di dati) alla variabile items.
   items += `
 
     <div class="team-container">
@@ -76,7 +81,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     </div >
 
     `
-
+  // debugging
   console.table(items);
 
 }
